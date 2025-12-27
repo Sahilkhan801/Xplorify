@@ -13,66 +13,66 @@ updateClock();
 
 const database = {
     inCampus: [
-        { id: 1, title: "Block A", category: "Academic", image: "A-Block.webp", rating: 4.8, distance: "Primary Entrance Zone", description: "The administrative powerhouse of Rungta. Houses the Student Section (FA-01), Admission Cell, and the Examination Section (FA-09). Most freshman engineering classes are conducted here in high-tech smart rooms.", tags: ["Admin", "1st Year", "Smart Class"], coords: [21.2125, 81.3735] },
+        { id: 1, title: "Block A", category: "Academic", image: "A-Block.webp", rating: 4.8, distance: "Primary Entrance Zone", description: "The administrative powerhouse of Rungta. Houses the Student Section (FA-01), Admission Cell, and the Examination Section (FA-09). Most freshman engineering classes are conducted here in high-tech smart rooms.", tags: ["Admin", "1st Year", "Smart Class"], coords: [21.234850, 81.345732] },
 
-        { id: 2, title: "Block B", category: "Academic", image: "B_Block.webp", rating: 4.6, distance: "Central Square", description: "The cultural hub. Contains the main Auditorium and the 'Rubi' Entrepreneurship cell where students innovate and develop real-world products.", tags: ["Startup", "Auditorium", "Rubi Hub"], coords: [21.2122, 81.3742] },
+        { id: 2, title: "Block B", category: "Academic", image: "B_Block.webp", rating: 4.6, distance: "Central Square", description: "The cultural hub. Contains the main Auditorium and the 'Rubi' Entrepreneurship cell where students innovate and develop real-world products.", tags: ["Startup", "Auditorium", "Rubi Hub"], coords: [21.234850, 81.345732] },
 
-        { id: 3, title: "Block C", category: "Academic", image: "C block.webp", rating: 4.5, distance: "North Sector", description: "Dedicated to senior students, Study Management, and core Science disciplines. Advanced labs and peaceful study zones.", tags: ["Management", "Labs", "Seniors"], coords: [21.2130, 81.3738] },
+        { id: 3, title: "Block C", category: "Academic", image: "C block.webp", rating: 4.5, distance: "North Sector", description: "Dedicated to senior students, Study Management, and core Science disciplines. Advanced labs and peaceful study zones.", tags: ["Management", "Labs", "Seniors"], coords: [21.234850, 81.345732] },
 
-        { id: 4, title: "Pharmacy Block", category: "Academic", image: "Pharmacy_Block.webp", rating: 4.7, distance: "East Side", description: "Specialized building for Pharmaceutical Sciences. Modern chemistry labs and medical research infrastructure.", tags: ["Pharmacy", "Medical", "Labs"], coords: [21.2128, 81.3745] },
+        { id: 4, title: "Pharmacy Block", category: "Academic", image: "Pharmacy_Block.webp", rating: 4.7, distance: "East Side", description: "Specialized building for Pharmaceutical Sciences. Modern chemistry labs and medical research infrastructure.", tags: ["Pharmacy", "Medical", "Labs"], coords: [21.234850, 81.345732] },
 
-        { id: 5, title: "Auditorium", category: "Academic", image: "Auditorium.webp", rating: 4.7, distance: "Block B - Ground Floor", description: "For Important Meeting and Conference. Silient Zone", tags: ["Meeting", "Conference"], coords: [21.233780, 81.347338] },
+        { id: 5, title: "Auditorium", category: "Academic", image: "Auditorium.webp", rating: 4.7, distance: "Block B - Ground Floor", description: "For Important Meeting and Conference. Silient Zone", tags: ["Meeting", "Conference"], coords: [21.234850, 81.345732] },
 
-        { id: 6, title: "Chai Adda", category: "Food", image: "Chai_Ka_Adda.webp", rating: 4.9, distance: "Between Block A & B", description: "The soul of the campus. Famous for ginger tea, cold coffee, and the legendary instant Maggi sessions.", tags: ["Tea", "Hangout", "Maggi"], coords: [21.2118, 81.3725] },
+        { id: 6, title: "Chai Adda", category: "Food", image: "Chai_Ka_Adda.webp", rating: 4.9, distance: "Between Block A & B", description: "The soul of the campus. Famous for ginger tea, cold coffee, and the legendary instant Maggi sessions.", tags: ["Tea", "Hangout", "Maggi"], coords: [21.234850, 81.345732] },
 
-        { id: 6, title: "Canteen", category: "Food", image: "Canteen.webp", rating: 4.3, distance: "West Zone", description: "Extensive menu featuring South Indian snacks, diverse appetizers, and cold drinks. Great for group meals.", tags: ["Dosa", "Snacks", "Lunch"], coords: [21.2115, 81.3740] },
+        { id: 6, title: "Canteen", category: "Food", image: "Canteen.webp", rating: 4.3, distance: "West Zone", description: "Extensive menu featuring South Indian snacks, diverse appetizers, and cold drinks. Great for group meals.", tags: ["Dosa", "Snacks", "Lunch"], coords: [21.234850, 81.345732] },
 
-        { id: 7, title: "Juicy Corner", category: "Food", image: "Juice Corner.webp", rating: 4.7, distance: "Front of Mess", description: "Health-focused spot serving fresh seasonal fruit juices and protein-rich fruit salads.", tags: ["Fresh Juice", "Healthy", "Salads"], coords: [21.2128, 81.3736] },
+        { id: 7, title: "Juicy Corner", category: "Food", image: "Juice Corner.webp", rating: 4.7, distance: "Front of Mess", description: "Health-focused spot serving fresh seasonal fruit juices and protein-rich fruit salads.", tags: ["Fresh Juice", "Healthy", "Salads"], coords: [21.234850, 81.345732] },
 
-        { id: 8, title: "Main Mess", category: "Food", image: "Main_Mess.webp", rating: 4.1, distance: "Hostel Entry", description: "Large-scale dining hall serving Thali meals for hostellers and day scholars alike.", tags: ["Thali", "Daily Meals", "Veg"], coords: [21.2135, 81.3730] },
+        { id: 8, title: "Main Mess", category: "Food", image: "Main_Mess.webp", rating: 4.1, distance: "Hostel Entry", description: "Large-scale dining hall serving Thali meals for hostellers and day scholars alike.", tags: ["Thali", "Daily Meals", "Veg"], coords: [21.234850, 81.345732] },
 
-        { id: 9, title: "Divine Stationery", category: "Utility", image: "Divine Stationery .webp", rating: 4.5, distance: "Block B Entry", description: "Complete store for stationery, personal care items, snacks, and high-speed photocopying/printing.", tags: ["Photocopy", "Books", "Supplies"], coords: [21.2120, 81.3740] },
+        { id: 9, title: "Divine Stationery", category: "Utility", image: "Divine Stationery .webp", rating: 4.5, distance: "Block B Entry", description: "Complete store for stationery, personal care items, snacks, and high-speed photocopying/printing.", tags: ["Photocopy", "Books", "Supplies"], coords: [21.234850, 81.345732] },
 
-        { id: 10, title: "Student Parking", category: "Parking", image: "Student Parking.jpeg", rating: 4.0, distance: "Gate 1", description: "Dedicated secure area for student 2-wheelers. Staff sections also included.", tags: ["Two-Wheeler", "Staff"], coords: [21.2110, 81.3720] },
+        { id: 10, title: "Student Parking", category: "Parking", image: "Student Parking.jpeg", rating: 4.0, distance: "Gate 1", description: "Dedicated secure area for student 2-wheelers. Staff sections also included.", tags: ["Two-Wheeler", "Staff"], coords: [21.234850, 81.345732] },
 
-        { id: 11, title: "Teacher Parking", category: "Parking", image: "Teacher Parking.jpeg", rating: 4.2, distance: "Admin Rear", description: "Exclusive parking for faculty members' two-wheelers and four-wheelers.", tags: ["Car Parking", "Faculty"], coords: [21.2128, 81.3725] },
+        { id: 11, title: "Teacher Parking", category: "Parking", image: "Teacher Parking.jpeg", rating: 4.2, distance: "Admin Rear", description: "Exclusive parking for faculty members' two-wheelers and four-wheelers.", tags: ["Car Parking", "Faculty"], coords: [21.234850, 81.345732] },
 
-        { id: 12, title: "Sports Complex", category: "Sports", image: "Sports_Complex.webp", rating: 4.8, distance: "North End", description: "Includes the main athletic field and professional basketball court.", tags: ["Basketball", "Cricket", "Training"], coords: [21.2140, 81.3740] },
+        { id: 12, title: "Sports Complex", category: "Sports", image: "Sports_Complex.webp", rating: 4.8, distance: "North End", description: "Includes the main athletic field and professional basketball court.", tags: ["Basketball", "Cricket", "Training"], coords: [21.234850, 81.345732] },
 
-        { id: 13, title: "Student Section", category: "Academic", image: "Student Section.jpeg", rating: 4.8, distance: "Block 'A' FA-01", description: "For Academic Help And Documentation.", tags: ["Help", "Query", "Guildance"], coords: [21.2140, 81.3740] },
+        { id: 13, title: "Student Section", category: "Academic", image: "Student Section.jpeg", rating: 4.8, distance: "Block 'A' FA-01", description: "For Academic Help And Documentation.", tags: ["Help", "Query", "Guildance"], coords: [21.234850, 81.345732] },
 
-        { id: 14, title: "Examination Section", category: "Academic", image: "Exam_Controler_Room.webp", rating: 4.8, distance: "Block 'A' GA-09", description: "For Examination Help And Evalution.", tags: ["Exam"], coords: [21.2140, 81.3740] },
+        { id: 14, title: "Examination Section", category: "Academic", image: "Exam_Controler_Room.webp", rating: 4.8, distance: "Block 'A' GA-09", description: "For Examination Help And Evalution.", tags: ["Exam"], coords: [21.234850, 81.345732] },
 
-        { id: 15, title: "Rubi And TN&P", category: "Academic", image: "Rubi_Club.webp", rating: 4.8, distance: "Block B SB-02", description: "Includes the main athletic field and professional basketball court.", tags: ["Basketball", "Cricket", "Training"], coords: [21.2140, 81.3740] },
+        { id: 15, title: "Rubi And TN&P", category: "Academic", image: "Rubi_Club.webp", rating: 4.8, distance: "Block B SB-02", description: "Includes the main athletic field and professional basketball court.", tags: ["Basketball", "Cricket", "Training"], coords: [21.234850, 81.345732] },
 
-        { id: 16, title: "Front Office", category: "Academic", image: "Front Office.jpeg", rating: 4.8, distance: "Block B SB-02", description: "Help Desk For Students And Visitors.", tags: ["Help", "Query"], coords: [21.2140, 81.3740] },
+        { id: 16, title: "Front Office", category: "Academic", image: "Front Office.jpeg", rating: 4.8, distance: "Block B SB-02", description: "Help Desk For Students And Visitors.", tags: ["Help", "Query"], coords: [21.234850, 81.345732] },
 
-        { id: 17, title: "Account Section", category: "Fee", image: "Account_Department.webp", rating: 4.8, distance: "Block A 'Ground floor' ", description: "For Fee Related Works and Payments", tags: ["Fee", "Payment", "Accounts"], coords: [21.2140, 81.3740] },
+        { id: 17, title: "Account Section", category: "Fee", image: "Account_Department.webp", rating: 4.8, distance: "Block A 'Ground floor' ", description: "For Fee Related Works and Payments", tags: ["Fee", "Payment", "Accounts"], coords: [21.234850, 81.345732] },
 
 
     ],
     outCampus: [
-        { id: 18, title: "Surya TI Mall", category: "Shopping", image: "Surya_Mall.webp", rating: 4.6, distance: "5.2 km", description: "The ultimate weekend spot for movies, food court dining, and global brands.", tags: ["Mall", "Movies", "Food"], coords: [21.1965, 81.3325] },
+        { id: 18, title: "Surya TI Mall", category: "Shopping", image: "Surya_Mall.webp", rating: 4.6, distance: "5.2 km", description: "The ultimate weekend spot for movies, food court dining, and global brands.", tags: ["Mall", "Movies", "Food"], coords: [21.218720, 81.322654] },
 
-        { id: 19, title: "Care Hospital", category: "Emergency", image: "Care-Hospital (1).webp", rating: 4.4, distance: "2.0 km", description: "High-tier medical facility available 24/7 for student health emergencies.", tags: ["24/7", "Medical", "ER"], coords: [21.1925, 81.3550] },
+        { id: 19, title: "Care Hospital", category: "Emergency", image: "Care-Hospital (1).webp", rating: 4.4, distance: "2.0 km", description: "High-tier medical facility available 24/7 for student health emergencies.", tags: ["24/7", "Medical", "ER"], coords: [21.224427, 81.343876] },
 
-        { id: 20, title: "Red Chilli", category: "Food", image: "Red_Chilli_Hotel.webp", rating: 4.5, distance: "2.1 km", description: "Local favorite for late-night meals. Serves authentic Non-veg food.", tags: ["Late Night", "Low Budget"], coords: [21.2180, 81.3750] },
+        { id: 20, title: "Red Chilli", category: "Food", image: "Red_Chilli_Hotel.webp", rating: 4.5, distance: "2.1 km", description: "Local favorite for late-night meals. Serves authentic Non-veg food.", tags: ["Late Night", "Low Budget"], coords: [21.223656, 81.343818] },
 
-        { id: 21, title: "Boys PG", category: "Living", image: "Boys PG.webp", rating: 4.2, distance: "1.5 km", description: "Secure housing for male students with WiFi and laundry.", tags: ["Stay", "Budget"], coords: [21.223126, 81.345442] },
+        { id: 21, title: "Boys PG", category: "Living", image: "Boys PG.webp", rating: 4.2, distance: "1.5 km", description: "Secure housing for male students with WiFi and laundry.", tags: ["Stay", "Budget"], coords: [21.225445, 81.345433] },
 
-        { id: 22, title: "Girls PG", category: "Living", image: "Girls_PG.webp", rating: 4.4, distance: "1.1 km", description: "High-security PG for female students with strictly controlled entry.", tags: ["Girls Only", "Stay"], coords: [21.223126, 81.345442] },
+        { id: 22, title: "Girls PG", category: "Living", image: "Girls_PG.webp", rating: 4.4, distance: "1.1 km", description: "High-security PG for female students with strictly controlled entry.", tags: ["Girls Only", "Stay"], coords: [21.226537, 81.339756] },
 
-        { id: 23, title: "Petrol Pump", category: "Fuel", image: "PetrolPump.webp", rating: 4.4, distance: "100 m", description: "For Fuel Filling in Vehicles", tags: ["fuel"], coords: [21.2160, 81.3710] },
+        { id: 23, title: "Petrol Pump", category: "Fuel", image: "PetrolPump.webp", rating: 4.4, distance: "100 m", description: "For Fuel Filling in Vehicles", tags: ["fuel"], coords: [21.235601, 81.350758] },
 
-        { id: 24, title: "Hotel Bellfare", category: "Living", image: "Bellfair.webp", rating: 4.4, distance: "700 m", description: "For Staying In Emergency For Few Days", tags: ["Staying"], coords: [21.230590,81.349031] },
+        { id: 24, title: "Hotel Bellfare", category: "Living", image: "Bellfair.webp", rating: 4.4, distance: "700 m", description: "For Staying In Emergency For Few Days", tags: ["Staying"], coords: [21.230558,81.349017] },
 
         { id: 25, title: "Medical Plus", category: "Emergency", image: "MedPlus_Medical.webp", rating: 4.4, distance: "2.4 km", description: "For Medicine in Emergency in Fever, Headache Etc..", tags: ["Medicine"], coords: [21.220610,81.344096] },
 
-        { id: 26, title: "Salon", category: "Utility", image: "Galaxy_Salon.webp", rating: 4.4, distance: "4.2 km", description: "For Shaving, Haircutting And Maintenance", tags: ["Hair-Cutting", "Shaving"], coords: [21.219484,81.322748] },
+        { id: 26, title: "Salon", category: "Utility", image: "Galaxy_Salon.webp", rating: 4.4, distance: "4.2 km", description: "For Shaving, Haircutting And Maintenance", tags: ["Hair-Cutting", "Shaving"], coords: [21.219489,81.322747] },
 
-        { id: 27, title: "Alpha Biryani", category: "Food", image: "Alpha biryani .webp", rating: 4.4, distance: "3.9 km", description: "For Birthday Celebration, Biryani, Non- Veh and Veg Food", tags: ["Food", "Celebrating"], coords: [21.218270,81.334927] },
+        { id: 27, title: "Alpha Biryani", category: "Food", image: "Alpha biryani .webp", rating: 4.4, distance: "3.9 km", description: "For Birthday Celebration, Biryani, Non- Veh and Veg Food", tags: ["Food", "Celebrating"], coords: [21.218279,81.334929] },
 
-        { id: 28, title: "Durg Station", category: "Station", image: "durg station .webp", rating: 4.4, distance: "10.3 km", description: "For Travelling in train, Booking Ticket Offline", tags: ["Station"], coords: [21.199749,81.291562] },
+        { id: 28, title: "Durg Station", category: "Station", image: "durg station .webp", rating: 4.4, distance: "10.3 km", description: "For Travelling in train, Booking Ticket Offline", tags: ["Station"], coords: [21.199750,81.291551] },
     ]
 };
 
@@ -225,4 +225,5 @@ function updateMapMarkers() {
         });
         markers.push(L.marker(item.coords, { icon: icon }).addTo(mapInstance).on('click', () => openModal(item.id)));
     });
+
 }
